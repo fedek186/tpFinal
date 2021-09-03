@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+	body { margin: 0; }	
+ul, ol { padding: 0; }
+li { list-style-type: none; }
+a { text-decoration: none; color: #000; }
+
+header{
+    height: 15vh;
+    width: 100vw;
+    border-bottom:  2px solid #707070;
+    display: flex;
+    align-items: center;
+}
+
+nav { 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.logo {
+    width:6%;
+    margin: 0 0 0 5%;
+
+}
+
+.buscar-grupo {
+
+    border: 1px solid #707070;  
+    display: flex;
+    justify-content: space-between;
+    border-radius:20px;
+    overflow: hidden; /*Todo lo que se sale del Div se esconde, los brodes fueran del div, EN HIDDEN*/
+}
+
+.input-buscar {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: 'Poppins';
+    font-weight: medium;
+    padding-left: 3%;
+}
+
+.boton-buscar {
+    background-color: #1473E6;
+    border: none;
+    padding:2%;
+}
+
+a { 
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size:23px;
+    margin:0 4%;
+}
+
+.favoritos {
+    width:2.5%;
+    margin-left: 3%;
+}
