@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.posterbatman{
+    height: 300px;
+    width: 230px;
+    border-radius: 8%;
+    flex-wrap: wrap;
+    margin-top: 35vh;
+    margin-bottom: 35vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+}
+
+.article{
+    margin-top: 35vh;
+    margin-bottom: 35vh;
+}
+
+.titulo{
+    font-family: poppins;
+    text-decoration: none;
+    font-size: 28px;
+    margin-bottom: 2vh;
+    
+}
+
+.fecha{
+    font-family: poppins;
+    font-size: 18px;
+    margin-bottom: 2vh;
+}
+
+.descripcion{
+    font-family: poppins;
+    font-size: 16px;
+    margin-bottom: 2vh;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    
+}
+
+.botones{
+    background-color: #1473E6;
+    border-radius: 15px;
+    height: 22px;
+    width: 65px;
+    color: white;
+    font-family: poppins;
+    font-size: 12px;
+    justify-content:space-around;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.corazon{
+    margin-bottom: 30vh;
+    
+    
+}
