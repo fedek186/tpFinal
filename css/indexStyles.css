@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 8px;
+    padding: 0px;
+}
+
+.Clasificación{
+    font-weight: bold;
+}
+
+.PelisPopulares{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Portadapeli{
+    width: 150px;
+    border-radius: 15px;
+}
+
+.NombrePeli{
+    font-weight: bold;
+    font-size: 18px;
+}
+.fechapelicula{
+    font-size: 12px;
+}
