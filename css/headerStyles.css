@@ -5,8 +5,8 @@ li { list-style-type: none; }
 a { text-decoration: none; color: #000; }
 
 header{
-    height: 15vh;
     width: 100vw;
+    height:100vh;
     border-bottom:  2px solid #707070;
     display: flex;
     align-items: center;
@@ -22,7 +22,6 @@ nav {
 .logo {
     width:6%;
     margin: 0 0 0 5%;
-
 }
 
 .buscar-grupo {
