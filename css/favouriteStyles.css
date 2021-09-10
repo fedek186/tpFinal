@@ -2,39 +2,41 @@
 	body { margin: 0; }	
 ul, ol { padding: 0; }
 li { list-style-type: none; }
-a { text-decoration: none; color: #000; }
+a { text-decoration: none; color: #000;}
 
-.i_header { 
-    height: 15vh;
-    width: 100%;
-}
 
+h1 {  font-family: 'Poppins'; font-weight: 600; margin-left: 2%;}
 
 ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content:center;
+    width: 100vw;
 }
 
+li{
+    width:33%; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
 
 .Portadapeli{
     width: 150px;
     border-radius: 15px;
+   
 }
 
 .NombrePeli{
     font-family: 'Poppins'; 
     font-weight: 600;
     font-size:18px;
+    margin:3% 0 0 0;
 }
 .fechapelicula{
     font-size: 12px;
     font-family: 'Poppins'; 
     font-weight: 500;
-}
-
-.i_footer {
-    height: 20vh;
-    width: 100%;
+    margin:2% 0 0 0; 
 }
