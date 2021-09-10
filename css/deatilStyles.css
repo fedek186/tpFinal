@@ -28,7 +28,7 @@
     margin-bottom: 35vh;
 }
 
-.titulo{
+.tituloPelicula{
     font-family: poppins;
     text-decoration: none;
     font-size: 28px;
@@ -42,7 +42,7 @@
     margin-bottom: 2vh;
 }
 
-.descripcion{
+.descripcionPelicula{
     font-family: poppins;
     font-size: 16px;
     margin-bottom: 2vh;
@@ -55,21 +55,25 @@ div{
     
 }
 
-.botones{
+.boton{
     background-color: #1473E6;
     border-radius: 15px;
     height: 22px;
     width: 65px;
+    margin-right: 10px;
+    justify-content:space-around;
+    align-items: center;
     color: white;
     font-family: poppins;
     font-size: 12px;
-    justify-content:space-around;
-    align-items: center;
-    margin-right: 10px;
 }
 
-.corazon{
+
+.iconCorazon{
     margin-bottom: 30vh;
-    
+    width: 40px;
+    filter: invert(39%) sepia(92%) saturate(5128%) hue-rotate(204deg) brightness(99%) contrast(85%);
+    /*es un color super especifico*/
+
     
 }

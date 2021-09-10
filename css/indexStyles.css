@@ -21,13 +21,14 @@ ul{
     align-items: center;
 }
 
-.H{
+
+.elemento{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.A{
-    d
-}
 
 .Portadapeli{
     width: 150px;
@@ -45,6 +46,7 @@ ul{
     font-size: 12px;
     font-family: 'Poppins'; 
     font-weight: 500;
+    margin-top: 0.2%;
 }
 
 .i_footer {
