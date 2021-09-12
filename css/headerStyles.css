@@ -5,8 +5,8 @@ li { list-style-type: none; }
 a { text-decoration: none; color: #000; }
 
 header{
-    width: 100vw;
-    height:100vh;
+
+    height:15vh;
     border-bottom:  2px solid #707070;
     display: flex;
     align-items: center;
@@ -24,6 +24,10 @@ nav {
     margin: 0 0 0 5%;
 }
 
+.formulario {
+    width: 35%;
+    margin: 0 0 0 18%;
+}
 .buscar-grupo {
 
     border: 1px solid #707070;  
@@ -48,7 +52,7 @@ nav {
     padding:2%;
 }
 
-a { 
+header a { 
     font-family: 'Poppins';
     font-weight: bold;
     font-size:23px;
@@ -56,6 +60,43 @@ a {
 }
 
 .favoritos {
-    width:2.5%;
-    margin-left: 3%;
+    align-self: center;
+    width:80%;
+    margin-top:20%;
+}
+
+@media (max-width:768px)
+{
+    header a {
+        font-size:15px;
+    }
+    .logo {
+        width:9%;
+    }
+    .formulario {
+        margin: 0 0 0 5%;
+    }
+    .favoritos {
+        width:90%;
+    }
+
+}
+
+@media (max-width:420px)
+{
+    header {
+        height:30vh;
+    }
+    nav { 
+        flex-direction: column;
+      justify-content: center;
+    }
+    .logo {
+        width:20%;
+        margin: 2% auto;
+    }
+    .formulario {margin: 2% 0; width:50%}
+    header a { margin: 0.5% 0;
+    font-size: 15px;}
+    .favoritos {width:60%; margin-left: 15%; }
 }

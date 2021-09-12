@@ -7,11 +7,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/genresStyles.css"> 
+    <link rel="stylesheet" href="../css/genresStyles.css"> 
+    <link rel="stylesheet" href="../css/headerStyles.css"> 
+    <link rel="stylesheet" href="../css/footerStyles.css"> 
     <title>Genres</title>
 </head>
 <body>
-    <iframe class="i_header" src="../source/parciales/header.html" frameborder="0"></iframe>
+    <header>
+        <nav>
+            <img class="logo" src="../../img/icons/Cine..svg">
+            <form action="./search.html" method="get" class="formulario">
+                <div class="buscar-grupo">
+                    <input type="text" class="input-buscar" placeholder="Buscar..." required>
+                    <button type="submit" class="boton-buscar"> <img style="width:60%;"
+                            src="../../img/icons/iconSearch.svg"></button>
+                </div>
+            </form>
+        
+                <a href="./index.html">Home</a>
+                <a href="./genres.html">Generos</a>
+
+            <a href="./favourites.html">
+                <img class="favoritos" src="../../img/icons/iconHeart.svg">
+            </a>
+        </nav>
+    </header>
     <main>
         <h1>Generos</h1>
         <section class="container_lists">
@@ -36,6 +56,22 @@
             </ul>
         </section>
     </main>
-    <iframe class="i_footer" src="../source/parciales/footer.html" frameborder="0"></iframe>
+    <footer>
+        <ul class="listaFoot">
+            <h3 class="develop">Develop by:</h3>
+            <li>
+                <p style="font-size:18px; margin:0;">Manuel Espora</p>
+                <p style="font-size:13px; margin:0;">mespora@udesa.edu.ar</p>
+            </li>
+            <li>
+                <p style="font-size:18px; margin:0;">Ninja Jensen</p>
+                <p style="font-size:13px; margin:0;">njensen@udesa.edu.ar</p>
+            </li>
+            <li>
+                <p style="font-size:18px; margin:0;">Federico Kozak</p>
+                <p style="font-size:13px; margin:0;">fkozak@udesa.edu.ar</p>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>

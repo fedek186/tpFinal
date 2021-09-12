@@ -4,17 +4,14 @@ ul, ol { padding: 0; }
 li { list-style-type: none; }
 a { text-decoration: none; color: #000; }
 
-.i_header { 
-    height: 15vh;
-    width: 100%;
-}
 
-h2{
+
+main h2{
     font-family: 'Poppins';
     margin: 3%;
 }
 
-ul{
+main ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -47,9 +44,4 @@ ul{
     font-family: 'Poppins'; 
     font-weight: 500;
     margin-top: 0.2%;
-}
-
-.i_footer {
-    height: 20vh;
-    width: 100%;
 }

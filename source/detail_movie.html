@@ -4,28 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/deatilStyles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/deatilStyles.css">
+    <link rel="stylesheet" href="../css/headerStyles.css"> 
+    <link rel="stylesheet" href="../css/footerStyles.css"> 
     <title>Batman el caballero de la noche</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <img class="logo" src="../../img/icons/Cine..svg">
+            <form action="./search.html" method="get" class="formulario">
+                <div class="buscar-grupo">
+                    <input type="text" class="input-buscar" placeholder="Buscar..." required>
+                    <button type="submit" class="boton-buscar"> <img style="width:60%;"
+                            src="../../img/icons/iconSearch.svg"></button>
+                </div>
+            </form>
+        
+                <a href="./index.html">Home</a>
+                <a href="./genres.html">Generos</a>
+
+            <a href="./favourites.html">
+                <img class="favoritos" src="../../img/icons/iconHeart.svg">
+            </a>
+        </nav>
+    </header>
     <main>
         <section class="section">
             <article>
                 <img class="posterbatman" src="../img/Portada Peliculas.jpg" alt="poster de la pelicula batman el caballero de la noche">
             </article>
             <article class="article">
-                <h1 class="titulo">Batman el caballero <br>
+                <h1 class="tituloPelicula">Batman el caballero <br>
                 de la noche</h1>
                 <h2 class="fecha">8/29/2021  -  1:30</h2>
-                <h3 class="descripcion">Mientras Batman, el teniente Gordon y el fiscal de distrito continúan desmantelando el bajo mundo criminal de Ciudad Gótica, un nuevo villano intenta deshacer su trabajo.</h3>
+                <h3 class="descripcionPelicula">Mientras Batman, el teniente Gordon y el fiscal de distrito continúan desmantelando el bajo mundo criminal de Ciudad Gótica, un nuevo villano intenta deshacer su trabajo.</h3>
                 <div>
-                    <a class="botones">Acción</a>
-                    <a class="botones">Aventura</a>
+                    <div class="boton"><a>Acción</a></div>
+                    <div class="boton"><a>Aventura</a></div>
                 </div>
             </article>
-            <img class="corazon" src="../img/icons/iconHeart.svg" alt="">
+            <img class="iconCorazon" src="../img/icons/iconHeart.svg" alt="">
         </section>
     </main>
+
 </body>
 </html>

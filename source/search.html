@@ -7,10 +7,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-    <link href="../css/favouriteStyles.css" rel="stylesheet">
+    <link href="../css/searchStyles.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/headerStyles.css">
+    <link rel="stylesheet" href="../css/footerStyles.css">
+
     <title>Busqueda por titulos</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <img class="logo" src="../../img/icons/Cine..svg">
+            <form action="./search.html" method="get" class="formulario">
+                <div class="buscar-grupo">
+                    <input type="text" class="input-buscar" placeholder="Buscar..." required>
+                    <button type="submit" class="boton-buscar"> <img style="width:60%;"
+                            src="../../img/icons/iconSearch.svg"></button>
+                </div>
+            </form>
+        
+                <a href="./index.html">Home</a>
+                <a href="./genres.html">Generos</a>
+
+            <a href="./favourites.html">
+                <img class="favoritos" src="../../img/icons/iconHeart.svg">
+            </a>
+        </nav>
+    </header>
     <main>
         <h1>Buscar:""</h1>
         <ul>
@@ -30,6 +52,7 @@
                 <p class="fechapelicula"> 08/29/2011</p>
             </li>
         </ul>
-    </main>
+    </main> 
+
 </body>
 </html>
