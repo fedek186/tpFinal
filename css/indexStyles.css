@@ -18,6 +18,9 @@ main ul{
     align-items: center;
 }
 
+main li { 
+    
+}
 
 .elemento{
     display: flex;

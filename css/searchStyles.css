@@ -42,3 +42,19 @@ main li{
     font-weight: 500;
     margin:2% 0 0 0; 
 }
+
+@media (max-width:768px)
+{
+   main h1 {font-size:25px;}
+   main li { width:50%; }
+   .Portadapeli { width:35%;}
+   .fechapelicula {  font-size:12px;}
+   .NombrePeli {font-size:12px;}
+}
+
+@media (max-width:420px)
+{
+    main {display:flex;flex-direction:column;}
+    main h1 {font-size:24spx; margin: 2% auto; }
+    main li { width:100%; margin-bottom:2%; }
+}
