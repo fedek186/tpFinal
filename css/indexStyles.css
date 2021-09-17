@@ -16,10 +16,13 @@ main ul{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 main li { 
-    
+    width: 20%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 .elemento{
@@ -48,3 +51,17 @@ main li {
     font-weight: 500;
     margin-top: 0.2%;
 }
+
+@media (max-width:768px){
+    main li{
+        width: 33%;
+    }
+}
+
+@media (max-width: 420px){
+    main li{
+        width: 45%;
+    }
+}
+
+
