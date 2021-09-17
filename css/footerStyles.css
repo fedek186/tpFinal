@@ -6,9 +6,7 @@ a { text-decoration: none; color: #000; }
 
 footer { 
     height: 20vh;
-    margin: 0;
-    background-color: #EEEEEE;
-    
+    background-color: #EEEEEE;   
 }
 
 .listaFoot {
@@ -34,4 +32,55 @@ footer li {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.nombre {
+    font-size:18px; 
+    margin:0;
+}
+
+.mail {
+    font-size:13px; 
+    margin:0;
+}
+
+
+@media (max-width:768px)
+{
+.develop {
+    font-size:20px;
+    margin: 0 10% 0 5%;
+}
+
+footer li {    margin: 0 6% 0 0;}
+.nombre{
+    font-size:15px; 
+}
+.mail{
+    font-size:10px;
+}
+  
+}
+
+@media (max-width:420px)
+{
+    footer {
+        height:35vh;
+    }
+    .listaFoot {
+        flex-direction: column;
+    }
+    .develop {
+        font-size:20px;
+        margin: 2% auto;
+    }
+    
+    footer li { margin: 3% auto;}
+    .nombre{
+        font-size:12px; 
+    }
+    .mail{
+        font-size:12px;
+    }
+      
 }
