@@ -40,7 +40,7 @@ main h1 {  font-family: 'Poppins'; font-weight: 600; margin-left: 2%;}
 }
 
 .img {
-    width: 65%;
+    width: 55%;
     border-radius: 20px;
 }
 .movies_genres_list {
@@ -73,6 +73,7 @@ main h1 {  font-family: 'Poppins'; font-weight: 600; margin-left: 2%;}
     .movies_genres_list {
         font-size:22px;
     }
+    main {padding-bottom: 18%;}
 
 }
 
