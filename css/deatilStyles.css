@@ -9,8 +9,8 @@
     width: auto;
     border-radius: 8%;
     flex-wrap: wrap;
-    margin-top: 35vh;
-    margin-bottom: 35vh;
+    margin-top: 11vh;
+    margin-bottom: 16vh;
     margin-left: 2vw;
     margin-right: 2vw;
 }
@@ -23,6 +23,8 @@
 
 .article{
     align-self: center;
+    margin-bottom: 7vh;
+
 }
 
 .tituloPelicula{
@@ -70,11 +72,10 @@ main a {
 .articleIcon{
     display: flex;
     align-content: center;
-    margin-bottom: 26vh;
+    margin-bottom: 33vh;
 }
 
 .iconCorazon{
-    
     width: 40px;
     filter: invert(39%) sepia(92%) saturate(5128%) hue-rotate(204deg) brightness(99%) contrast(85%);
     /*es un color super especifico*/    
@@ -92,7 +93,7 @@ main a {
     .descripcionPelicula{font-size: 90%;}
     .divBoton{justify-content: center;}
     .boton{width: 13%;}
-    .articleIcon{display: flex;justify-content: center;margin-top:5%;}
+    .articleIcon{display: flex;justify-content: center;margin-top:5%;    margin-bottom: 5%;}
     .iconCorazon{margin-bottom: 0%;}
 }
 
