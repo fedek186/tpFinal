@@ -10,18 +10,23 @@ main h1 {  font-family: 'Poppins'; font-weight: 600; margin-left: 2%;}
 main ul{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content:center;
     flex-wrap: wrap;
-
 }
 
-main li{
-    width:33%; 
+main li { 
+    width: 33%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.elemento{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    }
+    justify-content: center;
+    align-items: center;
+}
 
 .Portadapeli{
     width: 150px;

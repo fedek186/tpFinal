@@ -11,10 +11,9 @@ main h1 {  font-family: 'Poppins'; font-weight: 600; margin-left: 2%;}
 main ul{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content:center;
     flex-wrap: wrap;
-
 }
 
 main li{
@@ -24,11 +23,17 @@ main li{
     flex-direction: column;
     }
 
+.elemento{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 .Portadapeli{
     width: 150px;
     border-radius: 15px;
-   
-}
+   }
 
 .NombrePeli{
     font-family: 'Poppins'; 
