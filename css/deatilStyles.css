@@ -50,7 +50,7 @@
 main div{
     display: flex;
     flex-direction: row;
-    box-sizing: border-box;  
+   
 }
 
 .boton{
