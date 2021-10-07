@@ -8,7 +8,6 @@
     height: auto;
     width: auto;
     border-radius: 8%;
-    flex-wrap: wrap;
     margin-top: 11vh;
     margin-bottom: 16vh;
     margin-left: 2vw;
@@ -50,7 +49,6 @@
 main div{
     display: flex;
     flex-direction: row;
-    box-sizing: border-box;  
 }
 
 .boton{
