@@ -6,7 +6,7 @@ a { text-decoration: none; color: #000;}
 
 
 main {padding-bottom: 2.9%;}
-main h1 {  font-family: 'Poppins'; font-weight: 600; margin-left: 2%;}
+.titulo {  font-family: 'Poppins'; font-weight: 600; margin-left: 2%;}
 
 .container_lists {
     display: flex;
@@ -25,7 +25,7 @@ main h1 {  font-family: 'Poppins'; font-weight: 600; margin-left: 2%;}
     margin:0;
 }
 
-.series_genres_list li {
+.series_genres_list article {
     font-weight: 500;
     font-size:20px;
     margin: 2% 0;
@@ -55,7 +55,7 @@ main h1 {  font-family: 'Poppins'; font-weight: 600; margin-left: 2%;}
     margin:0;
 }
 
-.movies_genres_list li {
+.movies_genres_list article {
     font-weight: 500;
     font-size:20px;
     margin: 2% 0;
@@ -64,10 +64,10 @@ main h1 {  font-family: 'Poppins'; font-weight: 600; margin-left: 2%;}
 
 @media (max-width:768px)
 {
-    .series_genres_list li {
+    .series_genres_list article {
         font-size:16px;
     }
-    .movies_genres_list li {
+    .movies_genres_list article {
         font-size:16px;
     }
     .movies_genres_list {
