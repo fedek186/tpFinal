@@ -5,7 +5,6 @@ li { list-style-type: none; }
 a { text-decoration: none; color: #000;}
 
 
-main {padding-bottom:4.3%;}
 .titulo {  font-family: 'Poppins'; font-weight: 600; margin-left: 2%;}
 
 .formatoSection {
@@ -21,6 +20,7 @@ main {padding-bottom:4.3%;}
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 1.5%;
     }
 
 .elemento{
@@ -40,12 +40,29 @@ main {padding-bottom:4.3%;}
     font-weight: 600;
     font-size:18px;
     margin:3% 0 0 0;
+    text-align: center;
 }
 .fechapelicula{
     font-size: 12px;
     font-family: 'Poppins'; 
     font-weight: 500;
     margin:2% 0 0 0; 
+}
+.msjError {
+    font-family: 'Poppins'; 
+    font-weight: 500; 
+    font-size: 20px;
+
+}
+
+.errorSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgError {
+    width: 25%;
 }
 
 @media (max-width:768px)
@@ -55,6 +72,8 @@ main {padding-bottom:4.3%;}
    .Portadapeli { width:35%;}
    .fechapelicula {  font-size:12px;}
    .NombrePeli {font-size:12px;}
+   .msjError {font-size:16px; text-align:center;}
+   .imgError {width:40%;}
 }
 
 @media (max-width:420px)
@@ -62,4 +81,6 @@ main {padding-bottom:4.3%;}
     main {display:flex;flex-direction:column;}
     .titulo {font-size:24spx; margin: 2% auto; }
     .articulo { width:100%; margin-bottom:2%; }
+    .msjError {font-size:12px; text-align:center;}
+   .imgError {width:60%;}
 }

@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-    <link href="../css/searchStyles.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/headerStyles.css">
     <link rel="stylesheet" href="../css/footerStyles.css">
 
@@ -19,7 +18,7 @@
             <img class="logo" src="../img/icons/Cine..svg">
             <form action="./search.html" method="get" class="formulario">
                 <div class="buscar-grupo">
-                    <input type="text" class="input-buscar" placeholder="Buscar..." required>
+                    <input type="text" name= "busqueda" class="input-buscar" placeholder="Buscar pelis/series..." required>
                     <button type="submit" class="boton-buscar"> <img style="width:60%;"
                             src="../img/icons/iconSearch.svg"></button>
                 </div>
@@ -36,33 +35,6 @@
     <main>
         <h1 class="titulo">Buscar:""</h1>
         <section class="formatoSection">
-                <article class="articulo">
-                    <a href="./detail_movie.html">
-                        <div class="elemento">
-                            <img class="Portadapeli" src="../img/Portada Peliculas.jpg">
-                            <p class="NombrePeli">Batman II</p>
-                            <p class="fechapelicula"> 08/29/2011</p>
-                        </div>
-                    </a>
-                </article>
-                <article class="articulo">
-                    <a href="./detail_movie.html">
-                        <div class="elemento">
-                            <img class="Portadapeli" src="../img/Portada Peliculas.jpg">
-                            <p class="NombrePeli">Batman II</p>
-                            <p class="fechapelicula"> 08/29/2011</p>
-                        </div>
-                    </a>
-                </article>
-                <article class="articulo">
-                    <a href="./detail_movie.html">
-                        <div class="elemento">
-                            <img class="Portadapeli" src="../img/Portada Peliculas.jpg">
-                            <p class="NombrePeli">Batman II</p>
-                            <p class="fechapelicula"> 08/29/2011</p>
-                        </div>
-                    </a>
-                </article>
         </section>
     </main> 
     <footer>
@@ -84,4 +56,6 @@
     </footer>
 
 </body>
+<script src="../scripts/search.js"></script>
+<link href="../css/searchStyles.css" rel="stylesheet">
 </html>
