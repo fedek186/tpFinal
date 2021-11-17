@@ -1,3 +1,16 @@
+//Validar formulario
+let formulario = document.querySelector("form");
+let campoBuscar = document.querySelector("[name=busqueda]");
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault();
+  if (campoBuscar.value.length <= 3) {
+    campoBuscar.value = "";
+    alert("Ingresar mas de 3 caracteres en el buscador");
+  } else {
+    this.submit();
+  }
+});
+
 //Agarramos la palabra que se busco
 let queryString = location.search;
 let queryStringObject = new URLSearchParams(queryString);
@@ -18,9 +31,10 @@ fetch(url)
   })
   .then(function (data) {
     let info = data.results;
-    console.log(info);
+    let peliculaArt = "";
     for (let i = 0; i < info.length; i++) {
-      let peliculaArt = ` 
+      if (info[i].title != undefined) {
+        peliculaArt = ` 
         <article class="articulo">
             <a href="./detail_movie.html?id=${info[i].id}">
                 <div class="elemento">
@@ -30,20 +44,29 @@ fetch(url)
                 </div>
             </a>
         </article>`;
-        sectionGeneral.innerHTML += peliculaArt;
-    };
-    if(info.length == 0) {
-        let main = document.querySelector('main');
-        main.innerHTML += `
+      } else {
+        peliculaArt = `<article class="articulo">
+        <a href="./source/detail_movie.html?id=${info[i].id}">
+            <div class="elemento">
+                <img class="Portadapeli" src="https://www.themoviedb.org/t/p/original/${info[i].poster_path}">
+                <p class="NombrePeli">${info[i].name}</p>
+                <p class="fechapelicula"> ${info[i].first_air_date}</p>
+            </div>
+        </a>
+    </article>`;
+      }
+      sectionGeneral.innerHTML += peliculaArt;
+    }
+    if (info.length == 0) {
+      let main = document.querySelector("main");
+      main.innerHTML += `
         <section class="errorSection">
             <img class="imgError" src="../img/notFound.png"> 
             <h2 class="msjError"> Sherlock esta investigando porque no se encontraron los resultados de su busqueda </h2>
         </section>`;
-    };
+    }
   })
   .catch(function (error) {
     alert("Error en la traida de datos");
     console.log("Error: " + error);
   });
-
- 

@@ -1,3 +1,19 @@
+//Validar formulario
+let formulario = document.querySelector('form');
+let campoBuscar = document.querySelector('[name=busqueda]')
+formulario.addEventListener('submit', function(event)
+{
+  event.preventDefault();
+  if(campoBuscar.value.length <= 3)
+  {
+    campoBuscar.value = "";
+    alert('Ingresar mas de 3 caracteres en el buscador');
+  }
+  else {
+    this.submit();
+  };
+});
+
 //Peliculas Populares
 let pelispopulares = document.querySelector("#pelispopulares");
 let apiKey = "41bafc5fa52735dc2b13b57aa420f841";
@@ -9,7 +25,7 @@ fetch(urlpelispopulares)
 })
     .then(function(data){
     let info = data.results;
-    let datapopulares;
+    let datapopulares="";
     for (let i = 0; i < 5; i++) {
     datapopulares+=
     `<article class="articulo">
@@ -23,7 +39,7 @@ fetch(urlpelispopulares)
 </article>`
     }
 pelispopulares.innerHTML=datapopulares
-    console.log(data);
+    
 })
     .catch(function(error) {
     console.log("Error: " + error);
@@ -39,7 +55,7 @@ fetch(urlvaloradas)
 })
     .then(function(data){
     let info = data.results;
-    let datavaloradas;
+    let datavaloradas="";
     for (let i = 0; i < 5; i++) {
     datavaloradas+=
     `<article class="articulo">
@@ -53,7 +69,7 @@ fetch(urlvaloradas)
 </article>`
     }
 valoradas.innerHTML=datavaloradas
-    console.log(data);
+
 })
     .catch(function(error) {
     console.log("Error: " + error);
@@ -69,21 +85,22 @@ fetch(urlseriespopulares)
 })
     .then(function(data){
     let info = data.results;
-    let dataseriespopulares;
+    let dataseriespopulares="";
     for (let i = 0; i < 5; i++) {
     dataseriespopulares+=
     `<article class="articulo">
     <a href="./source/detail_movie.html?id=${info[i].id}">
         <div class="elemento">
             <img class="Portadapeli" src="https://www.themoviedb.org/t/p/original/${info[i].poster_path}">
-            <p class="NombrePeli">${info[i].title}</p>
-            <p class="fechapelicula"> ${info[i].release_date}</p>
+            <p class="NombrePeli">${info[i].name}</p>
+            <p class="fechapelicula"> ${info[i].first_air_date}</p>
         </div>
     </a>
 </article>`
     }
 seriespopulares.innerHTML=dataseriespopulares
-    console.log(data);
+console.log(info);
+
 })
     .catch(function(error) {
     console.log("Error: " + error);
