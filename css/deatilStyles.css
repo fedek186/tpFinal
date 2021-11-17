@@ -54,8 +54,9 @@ main div{
 .boton{
     background-color: #1473E6;
     border-radius: 15px;
-    height: 2vh;
-    width: 10%;
+    height: auto;
+    padding:1%;
+    width: auto;
     margin-right: 3%;
     justify-content:space-around;
     align-items: center;
@@ -90,7 +91,6 @@ main a {
     .descripcionPelicula{font-size: 15px;max-width: 100%;text-align: center;}
     .descripcionPelicula{font-size: 90%;}
     .divBoton{justify-content: center;}
-    .boton{width: 13%;}
     .articleIcon{display: flex;justify-content: center;margin-top:5%;    margin-bottom: 5%;}
     .iconCorazon{margin-bottom: 0%;}
 }
@@ -98,5 +98,4 @@ main a {
 @media (max-width:420px){
     .articlePoster{display: flex;}
     .posterbatman{margin:0 auto; margin-top: 5%; margin-bottom: 5%; justify-self: center;}
-    .boton{width: 23%;}
 }

@@ -15,27 +15,27 @@
 <body>
     <header>
         <nav>
-            <img class="logo" src="../../img/icons/Cine..svg">
+            <img class="logo" src="../img/icons/Cine..svg">
             <form action="./search.html" method="get" class="formulario">
                 <div class="buscar-grupo">
-                    <input type="text" class="input-buscar" placeholder="Buscar..." required>
+                    <input type="text" name= "busqueda" class="input-buscar" placeholder="Buscar pelis/series..." required>
                     <button type="submit" class="boton-buscar"> <img style="width:60%;"
-                            src="../../img/icons/iconSearch.svg"></button>
+                            src="../img/icons/iconSearch.svg"></button>
                 </div>
             </form>
         
-                <a href="./index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <a href="./genres.html">Generos</a>
 
             <a href="./favourites.html">
-                <img class="favoritos" src="../../img/icons/iconHeart.svg">
+                <img class="favoritos" src="../img/icons/iconHeart.svg">
             </a>
         </nav>
     </header>
     <main>
-        <h1>Accion:Series</h1>
-        <ul>
-            <li>
+        <h1 class="titulo">Accion:Series</h1>
+        <section class="formatoSection">
+            <article class="articulo">
               <a href="./detail_movie.html">
                         <div class="elemento">
                             <img class="Portadapeli" src="../img/Portada Peliculas.jpg">
@@ -43,8 +43,8 @@
                             <p class="fechapelicula"> 08/29/2011</p>
                         </div>
                     </a>
-                </li>
-                <li>
+                </article class="articulo">
+                <article class="articulo">
                     <a href="./detail_movie.html">
                         <div class="elemento">
                             <img class="Portadapeli" src="../img/Avatar.png">
@@ -52,8 +52,8 @@
                             <p class="fechapelicula"> 06/29/2011</p>
                         </div>
                     </a>
-                </li>
-                <li>
+                </article class="articulo">
+                <article class="articulo">
                     <a href="./detail_movie.html">
                         <div class="elemento">
                             <img class="Portadapeli" src="../img/el exorcista.jpeg">
@@ -61,8 +61,8 @@
                             <p class="fechapelicula"> 10/21/2000</p>
                         </div>
                     </a>
-                </li>
-        </ul>
+                </article class="articulo">
+            </section>
     </main>
     <footer>
         <ul class="listaFoot">

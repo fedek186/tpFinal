@@ -6,12 +6,12 @@ a { text-decoration: none; color: #000; }
 
 
 
-main h2{
+.subtitulo{
     font-family: 'Poppins';
     margin: 3%;
 }
 
-main ul{
+.formatoSection{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -19,7 +19,7 @@ main ul{
     flex-wrap: wrap;
 }
 
-main li { 
+.articulo { 
     width: 20%;
     margin-left: 0%;
     margin-right: 0%;
@@ -53,13 +53,13 @@ main li {
 }
 
 @media (max-width:768px){
-    main li{
+    .articulo{
         width: 33%;
     }
 }
 
 @media (max-width: 420px){
-    main li{
+    .articulo{
         width: 45%;
     }
     .NombrePeli {font-size:16px;}

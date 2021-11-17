@@ -15,7 +15,6 @@ nav {
     display: flex;
     align-items: center;
     width: 100%;
-    
 }
 
 .logo {
@@ -28,7 +27,6 @@ nav {
     margin: 0 0 0 18%;
 }
 .buscar-grupo {
-
     border: 1px solid #707070;  
     display: flex;
     justify-content: space-between;

@@ -15,61 +15,61 @@
 <body>
     <header>
         <nav>
-            <img class="logo" src="../../img/icons/Cine..svg">
+            <img class="logo" src="../img/icons/Cine..svg">
             <form action="./search.html" method="get" class="formulario">
                 <div class="buscar-grupo">
-                    <input type="text" class="input-buscar" placeholder="Buscar..." required>
+                    <input type="text" name= "busqueda" class="input-buscar" placeholder="Buscar pelis/series..." required>
                     <button type="submit" class="boton-buscar"> <img style="width:60%;"
-                            src="../../img/icons/iconSearch.svg"></button>
+                            src="../img/icons/iconSearch.svg"></button>
                 </div>
             </form>
         
-                <a href="./index.html">Home</a>
+            <a href="../index.html">Home</a>
                 <a href="./genres.html">Generos</a>
 
             <a href="./favourites.html">
-                <img class="favoritos" src="../../img/icons/iconHeart.svg">
+                <img class="favoritos" src="../img/icons/iconHeart.svg">
             </a>
         </nav>
     </header>
     <main>
-        <h1>Generos</h1>
+        <h1 class="titulo">Generos</h1>
         <section class="container_lists">
-            <ul class="series_genres_list">
+            <section class="series_genres_list">
                 <h3>Series</h3>
-                <li><a href="detail_genre_series.html">Accion</a></li>
-                <li><a href="detail_genre_series.html">Deporte</a></li>
-                <li><a href="detail_genre_series.html">Criminal</a></li>
-                <li><a href="detail_genre_series.html">Salud</a></li>
-                <li><a href="detail_genre_series.html">Comedia</a></li>
-            </ul>
+                <article><a href="detail_genre_series.html">Accion</a></article>
+                <article><a href="detail_genre_series.html">Deporte</a></article>
+                <article><a href="detail_genre_series.html">Criminal</a></article>
+                <article><a href="detail_genre_series.html">Salud</a></article>
+                <article><a href="detail_genre_series.html">Comedia</a></article>
+            </section>
            <section class="img_genres">
                 <img class="img"src="../img/seriesAccionPortada.jpg">
            </section>
-            <ul class="movies_genres_list">
+            <section class="movies_genres_list">
                 <h3>Peliculas</h3>
-                <li><a href="detail_genre_movies.html">Thriller</a></li>
-                <li><a href="detail_genre_movies.html">Slice of life</a></li>
-                <li><a href="detail_genre_movies.html">Policial</a></li>
-                <li><a href="detail_genre_movies.html">Romance</a></li>
-                <li><a href="detail_genre_movies.html">Accion</a></li>
-            </ul>
+                <article><a href="detail_genre_movies.html">Thriller</a></article>
+                <article><a href="detail_genre_movies.html">Slice of life</a></article>
+                <article><a href="detail_genre_movies.html">Policial</a></article>
+                <article><a href="detail_genre_movies.html">Romance</a></article>
+                <article><a href="detail_genre_movies.html">Accion</a></article>
+            </section>
         </section>
     </main>
     <footer>
         <ul class="listaFoot">
             <h3 class="develop">Develop by:</h3>
             <li>
-                <p style="font-size:18px; margin:0;">Manuel Espora</p>
-                <p style="font-size:13px; margin:0;">mespora@udesa.edu.ar</p>
+                <p class="nombre">Manuel Espora</p>
+                <p class="mail">mespora@udesa.edu.ar</p>
             </li>
             <li>
-                <p style="font-size:18px; margin:0;">Ninja Jensen</p>
-                <p style="font-size:13px; margin:0;">njensen@udesa.edu.ar</p>
+                <p class="nombre">Nina Jensen</p>
+                <p class="mail">njensen@udesa.edu.ar</p>
             </li>
             <li>
-                <p style="font-size:18px; margin:0;">Federico Kozak</p>
-                <p style="font-size:13px; margin:0;">fkozak@udesa.edu.ar</p>
+                <p class="nombre">Federico Kozak</p>
+                <p class="mail">fkozak@udesa.edu.ar</p>
             </li>
         </ul>
     </footer>
