@@ -43,7 +43,8 @@ a { text-decoration: none; color: #000; }
     align-items: center;
     font-family: 'Poppins'; 
     font-weight: 600;
-    font-size:18px;
+    font-size:17px;
+    text-align: center;
 }
 .fechapelicula{
     font-size: 12px;
