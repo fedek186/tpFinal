@@ -27,7 +27,7 @@ fetch(url)
         console.log(div);
         console.log(data.genres.length)
         for (let i=0; i < data.genres.length; i++){
-            console.log('sjsi' +i);
+            console.log('' +i);
             let genero = `<div class="boton"><a>${data.genres[i].name}</a></div>`;
             div.innerHTML += genero;
         }
