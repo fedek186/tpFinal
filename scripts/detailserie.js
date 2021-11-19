@@ -24,7 +24,7 @@ fetch(url)
         let h2 = document.querySelector(".descripcionPelicula");
         h2.innerText = data.overview;
         let p = document.querySelector(".fecha");
-        p.innerText = `${data.first_air_date} / ${data.number_of_seasons} seasons`;
+        p.innerText = `${data.first_air_date} / ${data.number_of_seasons} seasons / Rating: ${data.vote_average}`;
         let img = document.querySelector(".articlePoster");
         img.innerHTML = `<img class="poster" src="https://www.themoviedb.org/t/p/original/${data.poster_path}">`
 
