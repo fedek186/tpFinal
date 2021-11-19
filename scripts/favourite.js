@@ -37,7 +37,6 @@ if (localStorage.getItem("id") != null) {
     section.innerHTML += pelicula;
       })
       .catch(function (error) {
-        //Probamos con si es una serie
       });
   }
 }

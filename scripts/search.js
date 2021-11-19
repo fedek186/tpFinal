@@ -46,7 +46,7 @@ fetch(url)
         </article>`;
       } else {
         peliculaArt = `<article class="articulo">
-        <a href="./source/detail_movie.html?id=${info[i].id}">
+        <a href="./detail_series.html?id=${info[i].id}">
             <div class="elemento">
                 <img class="Portadapeli" src="https://www.themoviedb.org/t/p/original/${info[i].poster_path}">
                 <p class="NombrePeli">${info[i].name}</p>
