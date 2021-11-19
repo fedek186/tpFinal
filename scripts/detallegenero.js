@@ -1,3 +1,18 @@
+//Validar formulario
+let formulario = document.querySelector("form");
+let campoBuscar = document.querySelector("[name=busqueda]");
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault();
+  if (campoBuscar.value.length <= 3) {
+    campoBuscar.value = "";
+    alert("Ingresar mas de 3 caracteres en el buscador");
+  } else {
+    this.submit();
+  }
+});
+
+
+
 let queryString = location.search;
 console.log(queryString)
 let queryStringObject = new URLSearchParams(queryString);

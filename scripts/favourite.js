@@ -1,14 +1,16 @@
-/*
-//Creamos array y lo cargamos en local Storage
-let arrayId = [];
-localStorage.setItem('id',JSON.stringify(arrayId));
-//Traemos el array del local storage y le pusheamos un ID
-let array = JSON.parse(localStorage.getItem('id'));
-array.push("559969");
-localStorage.setItem('id',JSON.stringify(array));
-*/
+//Validar formulario
+let formulario = document.querySelector("form");
+let campoBuscar = document.querySelector("[name=busqueda]");
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault();
+  if (campoBuscar.value.length <= 3) {
+    campoBuscar.value = "";
+    alert("Ingresar mas de 3 caracteres en el buscador");
+  } else {
+    this.submit();
+  }
+});
 
-//Me fijo si hay algo en el localstorage y si lo hay laburo
 if (localStorage.getItem("id") != null) {
   console.log(localStorage.getItem("id"));
   let arrayFavoritos = JSON.parse(localStorage.getItem("id"));

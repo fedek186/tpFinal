@@ -1,3 +1,16 @@
+//Validar formulario
+let formulario = document.querySelector("form");
+let campoBuscar = document.querySelector("[name=busqueda]");
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault();
+  if (campoBuscar.value.length <= 3) {
+    campoBuscar.value = "";
+    alert("Ingresar mas de 3 caracteres en el buscador");
+  } else {
+    this.submit();
+  }
+});
+
 let apiKey = "4a170f79e9dd1a6c14bc5bf151dc07a3"
 let urlSeries= `https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}`;  
 

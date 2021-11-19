@@ -1,3 +1,16 @@
+//Validar formulario
+let formulario = document.querySelector("form");
+let campoBuscar = document.querySelector("[name=busqueda]");
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault();
+  if (campoBuscar.value.length <= 3) {
+    campoBuscar.value = "";
+    alert("Ingresar mas de 3 caracteres en el buscador");
+  } else {
+    this.submit();
+  }
+});
+
 let queryString = location.search;
 console.log(queryString);
 let queryStringObj = new URLSearchParams(queryString);
@@ -6,7 +19,7 @@ let id = queryStringObj.get("id");
 let api_key = "02b80f17e9b209f482a1320b2a6e13a4";
 
 let url = `https://api.themoviedb.org/3/tv/${id}?api_key=${api_key}`;
-//`https://api.themoviedb.org/3/search/tv/${id}?api_key=${api_key}&language=en-US&page=1&include_adult=false`
+
 
 fetch(url)
   .then(function (response) {
