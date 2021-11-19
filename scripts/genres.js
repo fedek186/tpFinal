@@ -14,7 +14,7 @@ fetch(urlSeries)
     
 //cargamos los articulos y tenemos ya todos los generos por serie
     for (let i = 0; i < 5; i++) {
-        let generoSeries= `<article><a href="detail_genre_series.html?id=${info[i].id}">${info[i].name}</a></article>`
+      let generoSeries= `<article><a href="detail_genre_series.html?id=${info[i].id}?tipo=series">${info[i].name}</a></article>`
         seriesLista.innerHTML += generoSeries
         
     }
@@ -41,7 +41,7 @@ fetch(urlPeliculas)
   let info= data.genres
 
   for (let i = 0; i < 5; i++) {
-      let generosPeliculas= `<article><a href="detail_genre_movies.html?id=${info[i].id}">${info[i].name}</a></article>`
+      let generosPeliculas= `<article><a href="detail_genre_movies.html?id=${info[i].id}?tipo=peliculas">${info[i].name}</a></article>`
       pelisLista.innerHTML += generosPeliculas
       
   }
