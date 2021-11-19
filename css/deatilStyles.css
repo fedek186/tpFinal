@@ -4,13 +4,13 @@
     padding: 0%;
 }
 
-.posterbatman{
+.poster{
     height: auto;
-    width: auto;
+    width: 40%;
     border-radius: 8%;
     margin-top: 11vh;
     margin-bottom: 16vh;
-    margin-left: 2vw;
+    margin-left: 10vw;
     margin-right: 2vw;
 }
 
@@ -31,7 +31,7 @@
     text-decoration: none;
     font-size: 28px;
     margin-bottom: 2vh;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .fecha{
@@ -42,8 +42,9 @@
 
 .descripcionPelicula{
     font-family: poppins;
-    font-size: 17px;
+    font-size: 13px;
     margin-bottom: 2vh;
+    
 }
 
 main div{
@@ -81,21 +82,70 @@ main a {
 }
 
 @media (max-width:768px){
-    .section{display: flex; flex-direction: column;}
-    .article{margin: 0%;}
-    .articlePoster{display: flex;}
-    .posterbatman{margin-top: 8%;margin-bottom: 5%;margin-left: 37%;margin-right: 37%;}
-    .article{display:flex; flex-direction:column;margin-left: 15%;margin-right: 15%;justify-self: center;}
-    .tituloPelicula{font-size: 25px;max-width: 100%;text-align: center;}
-    .fecha{font-size: 18px;max-width: 100%;text-align: center;}
-    .descripcionPelicula{font-size: 15px;max-width: 100%;text-align: center;}
-    .descripcionPelicula{font-size: 90%;}
-    .divBoton{justify-content: center;}
-    .articleIcon{display: flex;justify-content: center;margin-top:5%;    margin-bottom: 5%;}
-    .iconCorazon{margin-bottom: 0%;}
+    .section{
+        display: flex; 
+        flex-direction: column;
+    }
+    .article{
+        margin: 0%;
+    }
+    .articlePoster{
+        display: flex;
+        justify-content: center;
+    }
+    .poster{
+        margin-top: 8%;
+        margin-bottom: 5%;
+        margin-left: 37%;
+        margin-right: 37%;
+    }
+    .article{
+        display:flex; 
+        flex-direction:column;
+        margin-left: 15%;
+        margin-right: 15%;
+        justify-self: center;
+    }
+    .tituloPelicula{
+        font-size: 25px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .fecha{font-size: 18px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .descripcionPelicula{
+        font-size: 15px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .descripcionPelicula{
+        font-size: 90%;
+    }
+    .divBoton{
+        justify-content: center;
+    }
+    .articleIcon{
+        display: flex;
+        justify-content: center;
+        margin-top:5%;    
+        margin-bottom: 5%;
+    }
+    .iconCorazon{
+        margin-bottom: 0%;
+    }
 }
 
 @media (max-width:420px){
-    .articlePoster{display: flex;}
-    .posterbatman{margin:0 auto; margin-top: 5%; margin-bottom: 5%; justify-self: center;}
+    .articlePoster{
+        display: flex;
+        justify-content: center;
+    }
+    .poster{
+        margin:0 auto; 
+        margin-top: 5%; 
+        margin-bottom: 5%; 
+        justify-self: center;
+    }
 }
