@@ -11,9 +11,9 @@ formulario.addEventListener("submit", function (event) {
   }
 });
 
-if (localStorage.getItem("id") != null) {
-  console.log(localStorage.getItem("id"));
-  let arrayFavoritos = JSON.parse(localStorage.getItem("id"));
+if (localStorage.getItem("idPelis") != null) {
+  console.log(localStorage.getItem("idPelis"))
+  let arrayFavoritos = JSON.parse(localStorage.getItem("idPelis"));
   let apiKey = "41bafc5fa52735dc2b13b57aa420f841";
   let section = document.querySelector(".formatoSection");
   console.log(section);
@@ -33,6 +33,38 @@ if (localStorage.getItem("id") != null) {
                 <img class="Portadapeli" src="https://www.themoviedb.org/t/p/original/${data.poster_path}">
                 <p class="NombrePeli">${data.title}</p>
                 <p class="fechapelicula"> ${data.release_date}</p>
+            </div>
+        </a>
+    </article>`;
+    section.innerHTML += pelicula;
+      })
+      .catch(function (error) {
+      });
+  }
+}
+
+if (localStorage.getItem("idSeries") != null) {
+  console.log(localStorage.getItem("idSeries"))
+  let arrayFavoritos = JSON.parse(localStorage.getItem("idSeries"));
+  let apiKey = "41bafc5fa52735dc2b13b57aa420f841";
+  let section = document.querySelector(".formatoSection");
+  console.log(section);
+
+  for (let i = 0; i < arrayFavoritos.length; i++) {
+    let url = ` https://api.themoviedb.org/3/tv/${arrayFavoritos[i]}?api_key=${apiKey}`;
+    fetch(url)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        console.log(data);
+        //significa que es pelicula
+        let pelicula = `<article class="articulo">
+        <a href="./detail_series.html?id=${data.id}">
+            <div class="elemento">
+                <img class="Portadapeli" src="https://www.themoviedb.org/t/p/original/${data.poster_path}">
+                <p class="NombrePeli">${data.name}</p>
+                <p class="fechapelicula"> ${data.first_air_date}</p>
             </div>
         </a>
     </article>`;

@@ -12,29 +12,37 @@ formulario.addEventListener("submit", function (event) {
 });
 
 //Agarramos la palabra que se busco
-let queryString = location.search;
+let queryString = location.search; //Cadena de texto
 let queryStringObject = new URLSearchParams(queryString);
 let palabra = queryStringObject.get("busqueda");
 console.log(palabra);
 
 //Ponemos la palabra en el H1
 let h1 = document.querySelector("h1");
-h1.innerHTML = `Buscar: ${palabra}`;
+h1.innerText = `Buscar: ${palabra}`;
+
+let sectionGeneral = document.querySelector(".formatoSection");
+window.addEventListener("load", function(event) {
+  let gify = '<img class="gif" src="./img/load.gif">';
+  sectionGeneral.innerHTML = gify;
+});
+
 
 //Traeemos los datos de la api y agarramos el section
-let sectionGeneral = document.querySelector(".formatoSection");
 let apiKey = "41bafc5fa52735dc2b13b57aa420f841";
-let url = `https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${palabra}`;
+let url = `https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${palabra}`;//Explicar URL
 fetch(url)
   .then(function (response) {
     return response.json();
   })
   .then(function (data) {
+    let gif = document.querySelector(".gif");
+    gif.style.display = "none";
     let info = data.results;
-    let peliculaArt = "";
+    let articulo = "";
     for (let i = 0; i < info.length; i++) {
       if (info[i].title != undefined) {
-        peliculaArt = ` 
+        articulo = ` 
         <article class="articulo">
             <a href="./detail_movie.html?id=${info[i].id}">
                 <div class="elemento">
@@ -45,7 +53,7 @@ fetch(url)
             </a>
         </article>`;
       } else {
-        peliculaArt = `<article class="articulo">
+        articulo = `<article class="articulo">
         <a href="./detail_series.html?id=${info[i].id}">
             <div class="elemento">
                 <img class="Portadapeli" src="https://www.themoviedb.org/t/p/original/${info[i].poster_path}">
@@ -55,7 +63,7 @@ fetch(url)
         </a>
     </article>`;
       }
-      sectionGeneral.innerHTML += peliculaArt;
+      sectionGeneral.innerHTML += articulo;
     }
     if (info.length == 0) {
       let main = document.querySelector("main");
