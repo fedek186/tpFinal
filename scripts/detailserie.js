@@ -37,12 +37,13 @@ fetch(url)
     let divGeneros = document.querySelector(".divBoton");
     //GENEROS
     console.log(data.genres.length);
+    console.log(data)
     for (let i = 0; i < data.genres.length; i++) {
       let genero = `<div class="boton"><a href="detail_genre_movies.html?id=${data.genres[i].id}&tipo=series&nombre=${data.genres[i].name}">${data.genres[i].name}</a></div>`;
-      divGeneros.innerHTML = genero;
+      divGeneros.innerHTML += genero;
     }
   
-     //FAVORITOS
+     //FAVORITOS parte I
      let corazon = document.querySelector(".iconCorazon"); //Agarramos el corazon 
 
      if (localStorage.getItem("idSeries") == null) { //Existe algo guardado en el local? No
@@ -54,7 +55,8 @@ fetch(url)
          corazon.style.filter = "invert(39%) sepia(92%) saturate(5128%) hue-rotate(204deg) brightness(99%) contrast(85%)"; //Se pinta de azul
        }
      }
- 
+     
+    //FAVORITOS parte II
      corazon.addEventListener("click", function (e) {
        let array = JSON.parse(localStorage.getItem("idSeries")); //Traemos el array
        if (array.indexOf(id) != -1) { //Esta en el array? SI

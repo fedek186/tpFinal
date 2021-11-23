@@ -11,6 +11,8 @@ formulario.addEventListener("submit", function (event) {
   }
 });
 
+
+
 if (localStorage.getItem("idPelis") != null) {
   console.log(localStorage.getItem("idPelis"))
   let arrayFavoritos = JSON.parse(localStorage.getItem("idPelis"));
