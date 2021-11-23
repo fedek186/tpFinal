@@ -11,7 +11,7 @@ formulario.addEventListener("submit", function (event) {
   }
 });
 
-let queryString = location.search;
+let queryString = location.search; 
 console.log(queryString);
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
@@ -36,15 +36,13 @@ fetch(url)
     //empezando lista generos
 
     let div = document.querySelector(".divBoton");
-    console.log(div);
-    console.log(data.genres.length);
     for (let i = 0; i < data.genres.length; i++) {
       let genero = `<div class="boton"><a href="detail_genre_movies.html?id=${data.genres[i].id}&tipo=peliculas&nombre=${data.genres[i].name}">${data.genres[i].name}</a></div>`;
       div.innerHTML += genero;
     }
 
     //FAVORITOS
-    let corazon = document.querySelector(".iconCorazon"); //Agarramos el corazon 
+    let corazon = document.querySelector(".iconCorazon"); //Capturamos el elemento
 
     if (localStorage.getItem("idPelis") == null) { //Existe algo guardado en el local? No
       let arrayIdPeliculas = []; //Creamos array Id
@@ -57,7 +55,7 @@ fetch(url)
     }
 
     ///
-    corazon.addEventListener("click", function (e) {
+    corazon.addEventListener('click', function() {
       let array = JSON.parse(localStorage.getItem("idPelis")); //Traemos el array
       if (array.indexOf(id) != -1) { //Esta en el array? SI
         corazon.style.filter = "invert(68%) sepia(0%) saturate(0%) hue-rotate(162deg) brightness(92%) contrast(87%)"; //Pasa a Gris
